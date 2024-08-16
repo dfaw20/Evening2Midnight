@@ -31,7 +31,7 @@ func isShutdownPeriod() bool {
 	fmt.Println(now)
 
 	// 19:00~1:00の間
-	evening2MidnightPeriod := 19 < now.Hour() || now.Hour() <= 1
+	evening2MidnightPeriod := 19 < now.Hour() || now.Hour() < 1
 	fmt.Println("Evening 2 Midnight: ", evening2MidnightPeriod)
 	return !evening2MidnightPeriod
 }
