@@ -37,7 +37,7 @@ func isShutdownPeriod() bool {
 }
 
 func main() {
-	isProd := false
+	isProd := true
 
 	for {
 		if isShutdownPeriod() && isLidClosed() {
